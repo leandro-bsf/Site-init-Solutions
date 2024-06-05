@@ -16,6 +16,8 @@
 /.next/
 /out/
 next-env.d.ts
+package.json
+
 
 # production
 /build
