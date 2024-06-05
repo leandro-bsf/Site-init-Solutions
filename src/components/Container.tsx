@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import Preloader from "@/components/Preloader";
 import styles from "@/styles/Container.module.css";
+import logo from '../../public/assets/init.svg'
 
 type IconProps = {
   ["data-hide"]: boolean;
@@ -38,9 +39,9 @@ const variants = {
 
 const navLinks = [
   { href: "#home", text: "Home" },
-  { href: "#about", text: "About" },
-  { href: "#projects", text: "Projects" },
-  { href: "#services", text: "Services" },
+  { href: "#about", text: "Sobre" },
+  { href: "#projects", text: "Projeto" },
+  { href: "#services", text: "Serviços" },
 ];
 
 function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
@@ -82,9 +83,9 @@ export default function Container(props: ContainerProps) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Wendo",
+    title: "Init Solutions",
     description: `Full-stack website developer and TypeScript enthusiast.`,
-    image: "/assets/logo.webp",
+    image: "/assets/init.svg",
     type: "website",
     ...customMeta,
   };
@@ -163,7 +164,10 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <span className="text-lg font-semibold">wendo</span>
+          <div style={{ backgroundImage: `url (${logo})`,  width: `50px`}}>
+                  teste
+          </div>
+          {/* <span className="text-lg font-semibold">Init Soluctions</span> */}
         </Link>
 
         {/* Desktop menu */}

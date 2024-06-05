@@ -1,0 +1,135 @@
+.container{
+    display: block;
+  }
+  .roda_pe{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    
+  }
+  .Contato_item{
+    align-items: first baseline;
+  }
+  
+  .container_principal{
+      display: block;
+  }
+  .Menu{
+      width: 40%;
+      height: 100%;
+  
+  
+  }
+  .Menu_ul{
+      list-style: none;
+     
+  }
+  .whtas{
+
+  }
+  .Bt_whtas{
+    width: 100px;
+    height: auto;
+    color: green;
+    background-color: #000;
+    padding: 15px;
+    
+    border-radius: 50px;
+  }
+  
+  
+  .logo{
+      width: 70%;
+      height: auto;
+      
+  }
+  .menu-list{
+    margin: 10px;
+   
+  }
+  .style_link{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  
+    font-family: 'Poppins';
+  }
+  
+  .container {
+      display: flex; /* Torna os elementos filhos flexíveis */
+      width: 100%;
+  }
+  .box {
+      flex: 1; 
+      border-top: 2px solid #635c5c; 
+      width: 100%; 
+      font-family: 'Poppins';
+      font-size: 15px;
+  }
+  .box span{
+       text-align: left;
+       
+  }
+      
+      
+        .style_link:hover {
+          color:  #38b6ff ;
+          cursor: pointer;
+          font-weight: bold;
+        }
+       
+        .social-media-container {
+         
+          text-align: center; /* Centraliza o título e os ícones */
+        }
+        
+        .div-social {
+          display: flex;
+        
+         
+        align-items:end;        
+          
+        }
+        
+        .social-icon {
+          font-size: 30px; 
+          color: #030303; 
+       
+          margin-left: 10px;
+          padding: 5px;
+          margin-left: 15px;
+          border-radius: 5px;
+        }
+        
+        .social-icon:hover {
+          color: #000; /* Cor dos ícones ao passar o mouse */
+          cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+        }
+        .social-media-container{
+          text-align: left;
+          width: 100%;
+       
+        }
+       
+  @media (max-width: 750px)  {
+      .container{
+          display: block;
+          width: 100%;
+    
+      
+      }
+      .Menu{
+          width: 100%;
+      }
+      .Menu_ul a{
+          font-size: 15px;
+      }
+      .box span{
+          font-size: 15px;
+      }
+      .logo{
+        width: 70%;
+        height: auto;
+      }
+  }
