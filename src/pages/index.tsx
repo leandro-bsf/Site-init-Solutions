@@ -199,7 +199,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 data-scroll-direction="horizontal"
               >
-                <span className="text-6xl tracking-tighter text-foreground 2xl:text-8xl">
+                <span className="text-6xl c text-foreground 2xl:text-8xl">
                 Olá, somos a
                   <br />
                 </span>
@@ -222,7 +222,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="wa.me/5546999850991" passHref target="blank">
+              <Link href='https://wa.me/5546999850991' target="_blank" passHref>
                 <Button>
                 Entre em Contato <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -252,7 +252,7 @@ export default function Home() {
             className="mt-14 h-full w-full xl:mt-0"
           >
             <Suspense fallback={<span>Loading...</span>}>
-              <Spline scene="/assets/scene.splinecode" />
+              <img src="/assets/git.gif" />
             </Suspense>
           </div>
         </section>
@@ -432,7 +432,7 @@ export default function Home() {
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
             Atualmente estamos disponíveis para novos trabalhos e abertos a discutir novos projetos.
             </p>
-            <Link href="mailto:solucaoinit@gmail.com" passHref>
+            <Link href='https://wa.me/5546999850991' target="_blank" passHref>
               <Button className="mt-6">Entre em Contato</Button>
             </Link>
           </div>

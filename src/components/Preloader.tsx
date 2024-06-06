@@ -9,7 +9,7 @@ const opacity = {
   },
   enter: {
     opacity: 0.75,
-    transition: { duration: 1, delay: 0.2 },
+    transition: { duration: 0.3, delay: 0.2 },
   },
 };
 
@@ -19,7 +19,7 @@ const slideUp = {
   },
   exit: {
     top: "-100vh",
-    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
+    transition: { duration: 0.3, ease: [0.40, 0, 0.24, 1], delay: 0.2 },
   },
 };
 
@@ -44,7 +44,7 @@ export default function Preloader() {
       () => {
         setIndex(index + 1);
       },
-      index == 0 ? 1000 : 150,
+      index == 0 ? 50 : 10,
     );
   }, [index]);
 
@@ -54,11 +54,11 @@ export default function Preloader() {
   const curve = {
     initial: {
       d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] },
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1], delay: 0. },
     },
   };
 

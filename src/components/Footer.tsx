@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { MailIcon } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import Image from 'next/image'
 
 export default function Footer() {
   // get the current time in UTC+1 time zone
@@ -26,56 +26,85 @@ export default function Footer() {
   return (
     <footer className="w-full bg-gradient-to-t from-primary/[1%] to-transparent">
       <div className="container mx-auto flex flex-row items-center justify-between py-6">
-      <div className="container">
-            <div className="box">
-              
-            </div>
-            <div className="box">
-                <h3>Sobre</h3>
-                <span>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
-                </span>
-            </div>
-            <div className="box">
-                <ul className="menu-list">
-                    <h3>Menu</h3>
-                    <li> Serviços</li>
-                    <li>Sobre</li>
-                    <li>Portfólio</li>
-                    <li> Contato</li>
-                </ul>
-            </div>
-            <div className="box">
-                <div className="social-media-container">
-                    <h3>Contato</h3>
-                    <span style={{ color: '#38b6ff' }}>  Francisco Beltrão - PR  </span> <br />
-                    <span style={{ color: '#38b6ff' }}>  +554699170-4814</span>
-                </div>
-                <div className="social-media-container">
-                    <h3>Redes Sociais</h3>
-                    <div className="div-social">
-                         <span>logos</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <span className="flex flex-row items-center space-x-4">
+          <p className="text-xs text-muted-foreground">
+          Todos os direitos reservados  by{" "}
+            <Link
+              href=""
+              target="_blank"
+              passHref
+              className="text-foreground transition hover:text-primary"
+            >
+              Init Solutions
+            </Link>
+          </p>
+          <hr className="hidden h-6 border-l border-muted md:flex" />
+          <span className="flex hidden flex-row items-center space-x-2 md:flex">
+            <p className="text-xs text-muted-foreground">Local time:</p>
+            <p className="text-sm font-semibold">{time} UTC+1</p>
+          </span>
+        </span>
         <Link
           href="mailto:solucaoinit@gmail.com"
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
-          <Button variant={"outline"}>
+          <Button variant={"outline"} >
             <MailIcon className="h-4 w-4 md:mr-2" />
             <span className="hidden md:flex">solucaoinit@gmail.com</span>
           </Button>
 
         </Link>
-
-        <Link href='wa.me/5546999850991' className="whtas" 
-       >
-          <Button  className="">
-          <FaWhatsapp className="Bt_whtas"/>
+        <Link
+          href="mailto:solucaoinit@gmail.com"
+          passHref
+          className="text-xs text-muted-foreground hover:text-foreground"
+        >
+          <Button variant={"outline"} >
+          <Image src='/assets/whatsapp.png'width={25} height={25}  />
           </Button>
+
+        </Link>
+
+        <Link
+          href="mailto:solucaoinit@gmail.com"
+          passHref
+          className="text-xs text-muted-foreground hover:text-foreground"
+        >
+          <Button variant={"outline"} >
+          <Image src='/assets/whatsapp.png'width={25} height={25}  />
+          
+          </Button>
+
+        </Link>
+        <Link
+          href="mailto:solucaoinit@gmail.com"
+          passHref
+          className="text-xs text-muted-foreground hover:text-foreground"
+        >
+          <Button variant={"outline"} >
+          <Image src='/assets/whatsapp.png'width={25} height={25}  />
+          
+          </Button>
+
+        </Link>
+   
+   
+       
+       <Link href='https://wa.me/5546999850991' target="_blank" passHref> 
+        <Image
+           src='/assets/whatsapp.png'
+            width={70}
+           height={70}
+      style={{
+        position: 'fixed',
+        right: '0',
+        bottom: '0',
+        margin: '10px', // opcional, para adicionar uma margem ao redor da imagem
+        zIndex: '1000'}}
+      alt="Picture of the author"
+    />
+   
         </Link>
       </div>
       <div className="h-1 bg-[radial-gradient(closest-side,#8486ff,#42357d,#5d83ff,transparent)] opacity-50" />

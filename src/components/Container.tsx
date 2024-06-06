@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import Preloader from "@/components/Preloader";
 import styles from "@/styles/Container.module.css";
-import logo from '../../public/assets/init.svg'
+import Image from 'next/image'
 
 type IconProps = {
   ["data-hide"]: boolean;
@@ -153,7 +153,7 @@ export default function Container(props: ContainerProps) {
             onClick={() => setIsOpen(!isOpen)}
             className={cn(
               styles.burger,
-              "inline-flex transform items-center justify-center rounded-md p-2 transition-all duration-300 focus:outline-none",
+              "inline-flex transform items-center justify-center rounded-md p-2 transition-all duration-100 focus:outline-none",
             )}
             aria-controls="mobile-menu"
             aria-expanded="false"
@@ -164,9 +164,15 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <div style={{ backgroundImage: `url (${logo})`,  width: `50px`}}>
-                  teste
-          </div>
+       
+              
+                <Image
+    src="/assets/init_logo.png"
+      width={150}
+      height={130}
+      alt="Picture of the author"
+    />
+      
           {/* <span className="text-lg font-semibold">Init Soluctions</span> */}
         </Link>
 
@@ -224,7 +230,7 @@ export default function Container(props: ContainerProps) {
                 {/* Footer */}
                 <div className="flex min-h-fit w-full flex-col space-y-8 px-[22px] py-10">
                   <span className="text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} wendo. All rights reserved.
+                    © {new Date().getFullYear()} Todos Direito Reservado a Init Soluctions
                   </span>
                 </div>
               </div>

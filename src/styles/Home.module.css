@@ -12,10 +12,10 @@
 
 /* scroll down */
 .scroll {
-    @apply transition duration-300 absolute bottom-6 left-1/2 mb-8 hidden -translate-x-1/2 transform-gpu flex-col items-center text-sm text-slate-400 xl:flex tracking-tight;
+    @apply transition duration-100 absolute bottom-6 left-1/2 mb-8 hidden -translate-x-1/2 transform-gpu flex-col items-center text-sm text-slate-400 xl:flex tracking-tight;
 }
 .scroll--hidden {
-    @apply opacity-0 transition duration-300;
+    @apply opacity-0 transition duration-100;
 }
 
 /* projects */
@@ -29,5 +29,5 @@
     @apply bg-background border rounded-3xl h-[515px] xl:w-[690px] xl:min-w-[690px] overflow-hidden;
 
     /* this fixes the overflow:hidden in Chrome/Opera */
-    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+    /* -webkit-mask-image: url() */
 }
