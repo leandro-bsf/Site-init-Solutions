@@ -61,7 +61,7 @@ export default function Footer() {
           className="text-xs text-muted-foreground hover:text-foreground"
         >
           <Button variant={"outline"} >
-          <Image src='/assets/whatsapp.png'width={25} height={25}  />
+          <Image src='/assets/whatsapp.png'width={25} height={25}    alt="Picture of the author"/>
           </Button>
 
         </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
           className="text-xs text-muted-foreground hover:text-foreground"
         >
           <Button variant={"outline"} >
-          <Image src='/assets/whatsapp.png'width={25} height={25}  />
+          <Image src='/assets/whatsapp.png'width={25} height={25}   alt="Picture of the author"  />
           
           </Button>
 
@@ -83,7 +83,7 @@ export default function Footer() {
           className="text-xs text-muted-foreground hover:text-foreground"
         >
           <Button variant={"outline"} >
-          <Image src='/assets/whatsapp.png'width={25} height={25}  />
+          <Image src='/assets/whatsapp.png' width={25} height={25}   alt="Picture of the author" />
           
           </Button>
 
