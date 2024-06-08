@@ -168,8 +168,8 @@ export default function Container(props: ContainerProps) {
               
                 <Image
     src="/assets/init_logo.png"
-      width={150}
-      height={130}
+      width={120}
+      height={120}
       alt="Picture of the author"
     />
       
