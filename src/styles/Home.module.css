@@ -26,7 +26,8 @@
 /* spline canvas */
 #canvas-container
 {
-    @apply bg-background border rounded-3xl h-[515px] xl:w-[690px] xl:min-w-[690px] overflow-hidden;
+    @apply bg-background border rounded-3xl sm:h-[300px] xl:h-[490px] xl:w-[690px] xl:min-w-[690px] xl:min-h-[450px] overflow-hidden;
+    @apply flex items-center justify-center;
 
     /* this fixes the overflow:hidden in Chrome/Opera */
     /* -webkit-mask-image: url() */
