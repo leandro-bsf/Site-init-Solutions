@@ -252,7 +252,7 @@ export default function Home() {
             className="mt-14 h-full w-full xl:mt-0"
           >
             <Suspense fallback={<span>Loading...</span>}>
-              <img src="/assets/git.gif" />
+              <img src="/assets/tela-inicial1.png" className="pl-20" />
             </Suspense>
           </div>
         </section>
@@ -438,6 +438,8 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+
     </Container>
   );
 }
