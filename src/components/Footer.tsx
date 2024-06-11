@@ -41,7 +41,7 @@ export default function Footer() {
           <hr className="hidden h-6 border-l border-muted md:flex" />
           <span className="flex hidden flex-row items-center space-x-2 md:flex">
             <p className="text-xs text-muted-foreground">Local time:</p>
-            <p className="text-sm font-semibold">{time} UTC+1</p>
+            <p className="text-sm font-semibold">{time} </p>
           </span>
         </span>
         <Link
@@ -62,7 +62,7 @@ export default function Footer() {
      
       <div className="mr-20  items-center space-x-2 md:flex p-30 sm:mr-50">
         <Link
-          href="mailto:solucaoinit@gmail.com"
+          href="http://www.tiktok.com/@initsolutions" target="_blank" 
           passHref
           className="text-xs text-muted-foreground hover:text-foreground   "
         >
@@ -73,7 +73,7 @@ export default function Footer() {
         </Link>
 
         <Link
-          href="mailto:solucaoinit@gmail.com"
+          href="https://www.facebook.com/profile.php?id=61560747365598" target="_blank" 
           passHref
           className="text-xs text-muted-foreground hover:text-foreground   "
         >
@@ -85,12 +85,12 @@ export default function Footer() {
         </Link>
         
         <Link
-          href="mailto:solucaoinit@gmail.com"
-          passHref
+          href="https://www.instagram.com/initsolutions_/" target="_blank" 
+          passHref 
           className="text-xs text-muted-foreground hover:text-foreground   "
         >
           <Button variant={"outline"} >
-          <Image src='/assets/whatsapp.png'width={16} height={16}    alt="Picture of the author" />
+          <Image src='/assets/instagram.png'width={16} height={16}    alt="Picture of the author" />
           
           </Button>
 

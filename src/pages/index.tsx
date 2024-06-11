@@ -37,33 +37,17 @@ const projects = [
   {
     title: "Ceconi",
     description: "Um site para prestador de serviços",
-    image: "/assets/unqueue.webm",
+    image: "/assets/Ceconi.webm",
     href: "https://ceconi.vercel.app/",
   },
+  
+    
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
-  },
-  {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
-  },
-  {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
-  },
-  {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
-  },
+     title: "Init Solutions",
+     description: "Desenvolvimento de páginas web e softwares",
+     image: "/assets/Init.webm",
+     href: "https://www.initsolutions.com.br",
+   },
 ];
 
 const services = [
@@ -395,7 +379,7 @@ export default function Home() {
                   </span>
                 </h2>
                 <p className="mt-2 tracking-tighter text-secondary-foreground">
-                Aqui estão alguns dos serviços que ofereço. Se você tiver alguma dúvida, 
+                Aqui estão alguns dos serviços que oferecemos. Se você tiver alguma dúvida, 
                 sinta-se à vontade para entrar em contato.
                 </p>
               </div>
