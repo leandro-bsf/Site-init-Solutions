@@ -55,40 +55,9 @@ export default function Footer() {
           </Button>
 
         </Link>
-        <Link
-          href="mailto:solucaoinit@gmail.com"
-          passHref
-          className="text-xs text-muted-foreground hover:text-foreground"
-        >
-          <Button variant={"outline"} >
-          <Image src='/assets/tiktok-icon.png'width={25} height={25} alt="Picture of the author"/>
-          </Button>
+       
 
-        </Link>
 
-        <Link
-          href="mailto:solucaoinit@gmail.com"
-          passHref
-          className="text-xs text-muted-foreground hover:text-foreground"
-        >
-          <Button variant={"outline"} >
-          <Image src='/assets/facebook-icon.png'width={25} height={25} alt="Picture of the author"  />
-          
-          </Button>
-
-        </Link>
-        <Link
-          href="mailto:solucaoinit@gmail.com"
-          passHref
-          className="text-xs text-muted-foreground hover:text-foreground"
-        >
-          <Button variant={"outline"} >
-          <Image src='/assets/whatsapp.png' width={25} height={25}   alt="Picture of the author" />
-          
-          </Button>
-
-        </Link>
-   
    
        
        <Link href='https://wa.me/5546999850991' target="_blank" passHref> 
@@ -106,6 +75,43 @@ export default function Footer() {
     />
    
         </Link>
+        <div className="  ">
+        <Link
+          href="mailto:solucaoinit@gmail.com"
+          passHref
+          className="text-xs text-muted-foreground hover:text-foreground m-2"
+        >
+          <Button variant={"outline"} >
+          <Image src='/assets/tiktok-icon.png'width={25} height={25} alt="Picture of the author"/>
+          </Button>
+
+        </Link>
+
+        <Link
+          href="mailto:solucaoinit@gmail.com"
+          passHref
+          className="text-xs text-muted-foreground hover:text-foreground  m-2"
+        >
+          <Button variant={"outline"} >
+          <Image src='/assets/facebook-icon.png'width={25} height={25} alt="Picture of the author"  />
+          
+          </Button>
+
+        </Link>
+        
+        <Link
+          href="mailto:solucaoinit@gmail.com"
+          passHref
+          className="text-xs text-muted-foreground hover:text-foreground  m-2"
+        >
+          <Button variant={"outline"} >
+          <Image src='/assets/whatsapp.png' width={25} height={25}   alt="Picture of the author" />
+          
+          </Button>
+
+        </Link>
+   
+        </div>
       </div>
       <div className="h-1 bg-[radial-gradient(closest-side,#8486ff,#42357d,#5d83ff,transparent)] opacity-50" />
     </footer>
