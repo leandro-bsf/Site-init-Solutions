@@ -201,7 +201,7 @@ export default function Container(props: ContainerProps) {
             >
               {/* Expandable menu */}
               <div className="flex h-20 max-h-20 min-h-[60px] w-full items-center justify-between border-b pl-[22px] pr-1">
-                <span className="text-base font-medium lowercase">Menu</span>
+                <span className="text-base font-medium ">Menu</span>
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   className={styles.burger}

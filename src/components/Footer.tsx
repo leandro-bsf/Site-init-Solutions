@@ -25,7 +25,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-gradient-to-t from-primary/[1%] to-transparent">
-      <div className="container mx-auto flex flex-row items-center justify-between py-6">
+      <div className="container mx-auto flex flex-row items-center justify-between py-6 m-10">
       <span className="flex flex-row items-center space-x-2">
           <p className="text-xs text-muted-foreground">
           Todos os direitos reservados  by{" "}
@@ -59,23 +59,8 @@ export default function Footer() {
 
 
    
-       
-       <Link href='https://wa.me/5546999850991' target="_blank" passHref> 
-        <Image
-           src='/assets/whatsapp.png'
-            width={70}
-           height={70}
-      style={{
-        position: 'fixed',
-        right: '0',
-        bottom: '0',
-        margin: '10px', // opcional, para adicionar uma margem ao redor da imagem
-        zIndex: '1000'}}
-      alt="Picture of the author"
-    />
-   
-        </Link>
-      <div className="mr-20 m-2">
+     
+      <div className="mr-20  items-center space-x-2 md:flex p-30 sm:mr-50">
         <Link
           href="mailto:solucaoinit@gmail.com"
           passHref
@@ -112,8 +97,25 @@ export default function Footer() {
         </Link>
    
         </div>
+  
       </div>
       <div className="h-1 bg-[radial-gradient(closest-side,#8486ff,#42357d,#5d83ff,transparent)] opacity-50" />
+              
+      <Link href='https://wa.me/5546999850991' target="_blank" passHref> 
+        <Image
+           src='/assets/whatsapp.png'
+            width={70}
+           height={70}
+      style={{
+        position: 'fixed',
+        right: '0',
+        bottom: '0',
+        margin: '10px', // opcional, para adicionar uma margem ao redor da imagem
+        zIndex: '1000'}}
+      alt="Picture of the author"
+    />
+   
+        </Link>
     </footer>
   );
 }
