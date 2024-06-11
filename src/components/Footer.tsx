@@ -26,7 +26,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-gradient-to-t from-primary/[1%] to-transparent">
       <div className="container mx-auto flex flex-row items-center justify-between py-6">
-      <span className="flex flex-row items-center space-x-4">
+      <span className="flex flex-row items-center space-x-2">
           <p className="text-xs text-muted-foreground">
           Todos os direitos reservados  by{" "}
             <Link
@@ -75,14 +75,14 @@ export default function Footer() {
     />
    
         </Link>
-        <div className="  ">
+      <div className="mr-20 m-2">
         <Link
           href="mailto:solucaoinit@gmail.com"
           passHref
-          className="text-xs text-muted-foreground hover:text-foreground m-2"
+          className="text-xs text-muted-foreground hover:text-foreground   "
         >
           <Button variant={"outline"} >
-          <Image src='/assets/tiktok-icon.png'width={25} height={25} alt="Picture of the author"/>
+          <Image src='/assets/tiktok-icon.png'width={16} height={16} alt="Picture of the author"/>
           </Button>
 
         </Link>
@@ -90,10 +90,10 @@ export default function Footer() {
         <Link
           href="mailto:solucaoinit@gmail.com"
           passHref
-          className="text-xs text-muted-foreground hover:text-foreground  m-2"
+          className="text-xs text-muted-foreground hover:text-foreground   "
         >
           <Button variant={"outline"} >
-          <Image src='/assets/facebook-icon.png'width={25} height={25} alt="Picture of the author"  />
+          <Image src='/assets/facebook-icon.png' width={16} height={16}  alt="Picture of the author"  />
           
           </Button>
 
@@ -102,10 +102,10 @@ export default function Footer() {
         <Link
           href="mailto:solucaoinit@gmail.com"
           passHref
-          className="text-xs text-muted-foreground hover:text-foreground  m-2"
+          className="text-xs text-muted-foreground hover:text-foreground   "
         >
           <Button variant={"outline"} >
-          <Image src='/assets/whatsapp.png' width={25} height={25}   alt="Picture of the author" />
+          <Image src='/assets/whatsapp.png'width={16} height={16}    alt="Picture of the author" />
           
           </Button>
 
