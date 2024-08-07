@@ -1,20 +1,37 @@
 version: '3'
 services:
-  app:
-    image: site_init
+  site_init:
+    image: sua_imagem/site_init:latest
     ports:
-      - "3000:3000"  # Mapeia a porta 3000 do container para a porta 3000 do host
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
     networks:
       - npm_public
 
-  nginx:
-    image: nginx:latest
+  nginx-proxy:
+    image: 'jwilder/nginx-proxy'
     ports:
-      - "80:80"
+      - "8080:80"
+      - "443:443"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    networks:
+      - npm_public
+
+  nginx-proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    depends_on:
+      - nginx-proxy
+    volumes:
+      - ./data:/data
+    ports:
+      - "81:81"
+      - "8081:80"
+      - "4443:443"
     networks:
       - npm_public
 
 networks:
   npm_public:
+    external: true
