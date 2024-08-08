@@ -1,37 +1,15 @@
-version: '3'
+version: '3.8'
 services:
-  site_init:
-    image: site_init:latest
-    ports:
-      - "3000:3000"
-    environment:
-      - NODE_ENV=production
-    networks:
-      - npm_public
-
-  nginx-proxy:
-    image: 'jwilder/nginx-proxy'
-    ports:
-      - "8080:80"
-     
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-    networks:
-      - npm_public
-
-  nginx-proxy-manager:
+  app:
     image: 'jc21/nginx-proxy-manager:latest'
-    depends_on:
-      - nginx-proxy
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
     volumes:
       - ./data:/data
-    ports:
-      - "81:81"
-      - "80:80"
-      - "443:443"
+      - ./letsencrypt:/etc/letsencrypt
     networks:
       - npm_public
-
-networks:
-  npm_public:
     external: true
