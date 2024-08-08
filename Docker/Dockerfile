@@ -2,9 +2,11 @@
 FROM node:18
 
 # Crie e defina o diretório de trabalho dentro do container
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copie o package.json e o package-lock.json (ou yarn.lock) para o container
+COPY src ./src
+
 COPY package*.json ./
 
 # Instale as dependências da aplicação
